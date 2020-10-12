@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<DialogPane xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx"
+            fx:controller="dialog.pm.PmDialog"
+            prefHeight="800" prefWidth="1000" fx:id="dialogPane">
+    <content>
+        <ScrollPane fx:id="scrollPane" fitToWidth="true" id="content-pane">
+            <VBox fx:id="vBox" spacing="50" styleClass="no-border">
+                <VBox fx:id="pinPane" spacing="20">
+                    <Label text="已固定" styleClass="title">
+                    </Label>
+                    <TableView fx:id="pinTable">
+                        <placeholder>
+                            <Label>
+                            </Label>
+                        </placeholder>
+                        <columns>
+                            <TableColumn resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="项目名称" resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="项目路径" resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="创建时间" resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="最后修改时间" resizable="false" sortable="false">
+                            </TableColumn>
+                        </columns>
+                    </TableView>
+                </VBox>
+                <VBox fx:id="recentPane" spacing="20">
+                    <Label text="最近" styleClass="title">
+                    </Label>
+                    <TableView fx:id="recentTable">
+                        <placeholder>
+                            <Label text="最近没有打开的文件">
+                            </Label>
+                        </placeholder>
+                        <columns>
+                            <TableColumn resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="项目名称" resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="项目路径" resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="创建时间" resizable="false" sortable="false">
+                            </TableColumn>
+                            <TableColumn text="最后修改时间" resizable="false" sortable="false">
+                            </TableColumn>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </VBox>
+        </ScrollPane>
+    </content>
+</DialogPane>

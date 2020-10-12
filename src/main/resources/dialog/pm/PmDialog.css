@@ -1,0 +1,63 @@
+.dialog-pane {
+    -fx-background-color: #f3f3f3;
+}
+
+.no-border {
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+#content-pane:focused {
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+}
+
+.table-view {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.table-view:focused {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: transparent;
+    -fx-text-fill: gray;
+}
+
+.table-view .column-header {
+    -fx-pref-height: 40;
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #d2d2d2;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: gray;
+}
+
+.table-row-cell {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #d2d2d2;
+    -fx-background-color: #f3f3f3;
+}
+
+.table-column {
+    -fx-alignment: center-left;
+    -fx-border-color: transparent;
+}
+
+.title {
+    -fx-font-family: "Microsoft YaHei UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 1.5em;
+}
+
+.label {
+    -fx-alignment: center-left;
+}
